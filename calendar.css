@@ -1,0 +1,155 @@
+.g-input-style {
+    width: 200px;
+    height: 30px;
+    margin: 200px 0 0 200px;
+    padding: 0 5px;
+    border: 1px solid #e5e5e5;
+    line-height: 30px;
+}
+.g-calendar-bg {
+    position: absolute;
+    width: 274px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.12);
+    animation: moveLine .3s;
+}
+@keyframes moveLine {
+    from {
+        transform: translate3d(0, 20px, 0);
+        opacity: .3
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+.g-calendar-none {
+    display: none;
+}
+/*.g-calendar-none-animation {*/
+    /*-webkit-animation: disLine .3s;*/
+    /*-o-animation: disLine .3s;*/
+    /*animation: disLine .3s;*/
+/*}*/
+/*@keyframes disLine {*/
+    /*from {*/
+        /*transform: translate3d(0, 0, 0);*/
+        /*opacity: 1*/
+    /*}*/
+    /*to {*/
+        /*transform: translate3d(0, 20px, 0);*/
+        /*opacity: .3*/
+    /*}*/
+
+/*}*/
+.g-calendar-head {
+    position: relative;
+    height: 45px;
+    padding: 0 10px;
+    line-height: 40px;
+    text-align: center;
+    background: #f04144;
+    color: #fff;
+}
+.g-calendar-head a {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+}
+.g-calendar-head a:nth-child(1) {
+    left: 10px;
+    background: url("left_double_logo.png") no-repeat;
+    background-size: cover;
+}
+.g-calendar-head a:nth-child(2) {
+    left: 30px;
+    background: url("left_logo.png") no-repeat;
+    background-size: cover;
+}
+.g-calendar-head a:nth-child(3) {
+    right: 30px;
+    background: url("right_logo.png") no-repeat;
+    background-size: cover;
+}
+.g-calendar-head a:nth-child(4) {
+    right: 10px;
+    background: url("right_double_logo.png") no-repeat;
+    background-size: cover;
+}
+.g-calendar-head span {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    height: 30px;
+    width: 160px;
+    margin-top: -15px;
+    margin-left: -80px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.g-calender-body {
+    border: 1px solid #e5e5e5;
+}
+.g-calender-body table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.g-calender-body table tr {
+    height: 30px;
+    line-height: 30px;
+    border-collapse: collapse;
+}
+.g-calender-body table th {
+    font-weight: 400;
+    color: #333;
+}
+.g-calender-body table td, th {
+    font-size: 14px;
+    cursor: pointer;
+}
+.g-calender-body table td {
+    color: #666;
+}
+.g-calender-body table td:hover {
+    background: #eaeaea;
+    color: #333;
+}
+.g-calender-body .g-calendar-td-gray {
+    color: #e5e5e5;
+}
+.g-calender-body table .g-calendar-table-disable {
+    color: #d2d2d2;
+    background: none;
+}
+.g-calender-body table .g-calendar-table-disable:hover {
+    background: none;
+    color: #d2d2d2;
+    cursor: not-allowed;
+}
+.g-calender-td-select {
+    color: #fff !important;
+    background: #f04144 !important;
+}
+.g-calendar-operationBg {
+    width: 100%;
+    height: 46px;
+    border-top: 1px solid #e5e5e5;
+    line-height: 40px;
+}
+.g-calendar-operationBtn {
+    float: right;
+    width: 50px;
+    height: 26px;
+    margin-top: 10px;
+    margin-right: 6px;
+    border-radius: 0;
+    border: 1px solid #e5e5e5;
+    line-height: 26px;
+    cursor: pointer;
+}
+.g-calendar-operationBtn:hover {
+    color: #f04144;
+}
